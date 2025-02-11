@@ -1,0 +1,135 @@
+* {
+   padding: 0;
+   margin: 0;
+   font-family: 'italian', serif;
+   box-sizing: border-box;
+}
+
+body {
+   width: 100%;
+   height: 100vh;
+   overflow: hidden;
+   background-image: url(music\ background.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+ 
+nav {
+   /* Style for logo image */
+.logo img {
+   width: 5px; /* Adjust the width to your desired size */
+   height:min-content; /* Maintains the aspect ratio of the logo */
+}
+
+
+   width: 100%;
+   height: 100px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 10;
+   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.nav-container {
+   max-width: 940px;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0 10px;
+}
+
+.navlist {
+   display: flex;
+   gap: 40px;
+   height: 100%;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   margin: 0;
+}
+
+.nav-container .links a {
+   color: rgb(236, 235, 232);
+   font-size: 1rem;
+   margin: 0 17px;
+   text-decoration: none;
+   position: relative;
+   transition: 0.3s linear;
+}
+
+.nav-container .links a::before {
+   content: "";
+   position: absolute;
+   bottom: -4px;
+   width: 100%;
+   height: 3px;
+   scale: 0;
+   background-color: gold;
+   transition: 0.3s linear;
+}
+
+.nav-container .links a:hover,
+.nav-container .links a:hover::before {
+   color: gold;
+   scale: 1;
+}
+
+.nav-container .logo img {
+   width: 200px;
+}
+
+section {
+   width: 100%;
+   height: calc(100vh - 100px); /* Adjust the section height to avoid overlap with navbar */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.main-container {
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   color: whitesmoke;
+}
+
+.main-container .content {
+   width: 35%;
+   margin-left: 6%;
+}
+
+.main-container .image img {
+   width: 800px;
+}
+
+.content h3 {
+   color: gold;
+   font-size: 1.5rem;
+}
+
+.content h1 {
+   margin: 10px 0;
+   font-weight: 550;
+   word-spacing: 5px;
+}
+
+.content p {
+   width: 70%;
+}
+
+.buttons button {
+   padding: 10px 20px;
+   margin: 10px;
+   font-size: 1rem;
+   color: white;
+   background-color: gold;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
